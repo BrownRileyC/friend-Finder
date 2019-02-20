@@ -31,6 +31,8 @@ app.post('/api/friends', function(req, res){
         console.log(bestMatch);
         console.log(bestMatchDifference);
     }
+
+    friends.friends.push(newFriend);
     res.json(bestMatch);
 })
 };

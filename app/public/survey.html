@@ -195,7 +195,7 @@
                 $.post("/api/friends", userData, function (data) {
                     $("#friend-name").text(data.name);
                     if (data.photo.includes('http://')||data.photo.includes('https://')) {
-                        $("#friend-image").attr("src", data.photo);
+                        $("#friend-image").attr("src", data.photo).css('height',400);
                     }
                     $("#results-modal").modal("toggle");
                 });
